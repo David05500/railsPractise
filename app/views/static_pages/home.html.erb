@@ -1,7 +1,17 @@
-<% provide(:title, "Home") %>
 <h1>Sample App</h1>
 <p>
   This is the home page for the
   <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
   sample application.
 </p>
+
+
+
+<% @hashy.each do |key, val| %>
+  <h4> <%= key %> in spanish is <%= val %> </h4>
+<% end %>
+
+<% @params.each do |val| %>
+  <h4> <%= val[:name] %>  </h4>
+  <h4> <%= val[:email] %>  </h4>
+<% end %>
