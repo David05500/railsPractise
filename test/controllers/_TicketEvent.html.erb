@@ -1,9 +1,0 @@
-<span class="<%= ticket_icon_style_for(event.event_type) %>" data-grunticon-embed></span>
-<h3 class="timeline-item__header"><%= transition_for(event.event_type) %> on <%= l event.created_at, format: :full %></h3>
-<div class="event">
-  <%= image_tag event.account.avatar_url, class: 'user__image event__image' %>
-  <div class="event-info">
-    <h3 class="event__header"><%= event.account.full_name %></h3>
-    <span class="event__meta"><%= metadata_for(event) %></span>
-  </div>
-</div>
